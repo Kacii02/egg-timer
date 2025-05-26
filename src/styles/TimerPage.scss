@@ -1,0 +1,71 @@
+@import './variables';
+
+.timer-page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 7rem;
+}
+
+.timer-wrapper {
+    background-image: url('../assets/menu-bg.png');
+    background-size: cover; /* Make sure the image covers the entire div */
+    background-position: center; /* Center the image within the div */
+    background-repeat: no-repeat;
+    width: 33rem;
+
+    background-color: $light-yellow;
+    padding: 7rem 5rem ;
+    
+}
+
+.inner-timer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem;
+    background-color: white;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        display: inline-block;
+        width: 20rem;
+
+    font-size: 5rem;
+    margin: 0;
+    }
+    
+}
+
+button {
+    background-color: rgba($orange, 0.4);
+    color: $orange;
+    font-family: "Pixelify Sans";
+    border: 4px solid $orange;
+    font-size: 2rem;
+    width: 20rem;
+    height: 4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+        background-color: rgba($orange, 0.7); /* Change background on hover */
+        color: $light-yellow; /* Change text color to white */
+        transform: scale(1.1); /* Grow the button slightly */
+        box-shadow: 0px 4px 15px rgba($orange, 0.6); /* Add a soft shadow effect */
+    }
+}
+

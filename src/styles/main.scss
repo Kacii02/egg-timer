@@ -1,0 +1,11 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: $font-color;
+    font-size: 2rem;
+    background-color: $bg-yellow;
+    margin: 0;
+    padding: 0;
+  }
